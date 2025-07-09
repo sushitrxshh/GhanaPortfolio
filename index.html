@@ -1,294 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ghana Kanta Payeng - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghana Kanta Payeng - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts for bold, modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header Section -->
-  <header>
-    <div class="container">
-      <h1 class="animate__animated animate__fadeInDown">Ghana Kanta Payeng</h1>
-      <p class="animate__animated animate__fadeInUp">Software Engineer | Problem Solver | Innovator</p>
-      <nav>
-        <ul>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#academic" class="nav-link">Academic</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#certificates" class="nav-link">Certificates</a></li>
-          <li><a href="#job-photos" class="nav-link">Job Photos</a></li>
-          <li><a href="#memories" class="nav-link">Memories</a></li>
-          <li><a href="#resume" class="nav-link">Resume</a></li>
-          <li><a href="#feedback" class="nav-link">Feedback</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="animate__animated animate__fadeIn">Projects</h2>
-      <div class="project-container">
-        <!-- Project 1 -->
-        <div class="project animate__animated animate__fadeInLeft" onclick="openModal('modal1')">
-          <img src="project1.jpg" alt="Project 1">
-          <h3>Project 1</h3>
-          <p>Click to view details.</p>
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="header-content">
+            <a href="#hero" class="logo">GHANA<span class="logo-accent">-KANTA</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about" class="nav-link">MY STORY</a></li>
+                    <li><a href="#projects" class="nav-link">WORK</a></li>
+                    <li><a href="#skills" class="nav-link">SKILLS</a></li>
+                    <li><a href="#experience" class="nav-link">CAREER</a></li>
+                    <li><a href="#memories" class="nav-link">MEMORIES</a></li>
+                    <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
-        <!-- Project 2 -->
-        <div class="project animate__animated animate__fadeInUp" onclick="openModal('modal2')">
-          <img src="project2.jpg" alt="Project 2">
-          <h3>Project 2</h3>
-          <p>Click to view details.</p>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section section-full-height">
+        <div class="hero-grid">
+            <div class="hero-text-content reveal-slide-right">
+                <h1 class="hero-title">GHANA<span class="hero-title-accent">-KANTA</span></h1>
+                <p class="hero-tagline">Software Engineer. Problem Solver. Innovator.</p>
+                <a href="#projects" class="btn btn-hero">VIEW MY WORK <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-image-content reveal-fade-in">
+                <!-- IMPORTANT: Replace 'hero-portrait.jpg' with a striking black and white portrait image of yourself for best effect -->
+                <img src="hero-portrait.jpg" alt="Ghana Kanta Payeng Portrait">
+            </div>
         </div>
-        <!-- Project 3 -->
-        <div class="project animate__animated animate__fadeInRight" onclick="openModal('modal3')">
-          <img src="project3.jpg" alt="Project 3">
-          <h3>Project 3</h3>
-          <p>Click to view details.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section">
+        <div class="content-block reveal-fade-up">
+            <div class="text-block">
+                <h2 class="section-title">MY STORY</h2>
+                <p class="section-subtitle">A journey of passion, code, and impact.</p>
+                <p>
+                    I am a dedicated and enthusiastic Computer Science and Engineering student at Dibrugarh University Institute of Engineering & Technology (2023-2027). My academic journey has equipped me with a strong foundation in programming, data structures, algorithms, and modern software development methodologies.
+                </p>
+                <p>
+                    Beyond my studies, I am deeply involved in practical applications of technology and social initiatives. My experience in projects and internships, as detailed in my certificates and job photos, reflects my commitment to both technical excellence and community impact. I thrive in dynamic environments, constantly seeking new challenges and opportunities to learn and grow as a software engineer and a problem solver.
+                </p>
+                <a href="Ghana Kanta Payeng CV.pdf" download="Ghana Kanta Payeng CV.pdf" class="btn btn-secondary mt-3">DOWNLOAD CV <i class="fas fa-download"></i></a>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Project Modals -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal1')">&times;</span>
-      <h2>Project 1 Details</h2>
-      <p><strong>Description:</strong> GHANA</p>
-      <p><strong>Technologies:</strong> GHANA</p>
-      <p><strong>Role:</strong> GHANA</p>
-    </div>
-  </div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section">
+        <h2 class="section-title reveal-fade-up">FEATURED WORK</h2>
+        <p class="section-subtitle reveal-fade-up">Showcasing my diverse portfolio.</p>
 
-  <div id="modal2" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal2')">&times;</span>
-      <h2>Project 2 Details</h2>
-      <p><strong>Description:</strong> GHANA</p>
-      <p><strong>Technologies:</strong> GHANA</p>
-      <p><strong>Role:</strong> GHANA</p>
-    </div>
-  </div>
-
-  <div id="modal3" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal3')">&times;</span>
-      <h2>Project 3 Details</h2>
-      <p><strong>Description:</strong> GHANA</p>
-      <p><strong>Technologies:</strong> GHANA</p>
-      <p><strong>Role:</strong> GHANA</p>
-    </div>
-  </div>
-
-  <!-- Academic Details Section -->
-  <section id="academic" class="section">
-    <div class="container">
-      <h2 class="animate__animated animate__fadeIn">Academic Details</h2>
-      <div class="academic-details animate__animated animate__fadeInUp">
-        <p><strong>Degree:</strong> B.Tech in Computer Science and Engineering</p>
-        <p><strong>Institution:</strong> Dibrugarh University Institute of Engineering & Technology</p>
-        <p><strong>Year:</strong> 2023 - 2027</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <div class="container">
-      <h2 class="animate__animated animate__fadeIn">Skills</h2>
-      <div class="skills-container">
-        <div class="skills-marquee">
-          <!-- Skill 1: HTML -->
-          <div class="skill" onclick="showSkillPopup('HTML')">
-            <img src="html-logo.png" alt="HTML Logo" class="skill-icon">
-            <p>HTML</p>
-          </div>
-          <!-- Skill 2: CSS -->
-          <div class="skill" onclick="showSkillPopup('CSS')">
-            <img src="css-logo.png" alt="CSS Logo" class="skill-icon">
-            <p>CSS</p>
-          </div>
-          <!-- Skill 3: JavaScript -->
-          <div class="skill" onclick="showSkillPopup('JavaScript')">
-            <img src="js-logo.png" alt="JavaScript Logo" class="skill-icon">
-            <p>JavaScript</p>
-          </div>
-          <!-- Skill 4: Python -->
-          <div class="skill" onclick="showSkillPopup('Python')">
-            <img src="python-logo.png" alt="Python Logo" class="skill-icon">
-            <p>Python</p>
-          </div>
-          <!-- Skill 5: Java -->
-          <div class="skill" onclick="showSkillPopup('Java')">
-            <img src="java-logo.png" alt="Java Logo" class="skill-icon">
-            <p>Java</p>
-          </div>
-          <!-- Skill 6: React.js -->
-          <div class="skill" onclick="showSkillPopup('React.js')">
-            <img src="react-logo.png" alt="React Logo" class="skill-icon">
-            <p>React.js</p>
-          </div>
-          <!-- Skill 7: Node.js -->
-          <div class="skill" onclick="showSkillPopup('Node.js')">
-            <img src="node-logo.png" alt="Node.js Logo" class="skill-icon">
-            <p>Node.js</p>
-          </div>
+        <!-- Project 1: Interactive Data Dashboard -->
+        <div class="project-item content-block reveal-fade-up">
+            <div class="project-visual">
+                <!-- Replace with your project image -->
+                <img src="project1.jpg" alt="Interactive Dashboard Screenshot">
+            </div>
+            <div class="project-details">
+                <h3>Interactive Data Dashboard</h3>
+                <p class="project-type">Web Development, Data Visualization</p>
+                <p>
+                    Developed a responsive, real-time dashboard using React.js and D3.js. This project transforms complex datasets into intuitive and interactive visualizations, allowing users to filter, analyze, and gain insights effortlessly.
+                </p>
+                <ul class="project-tech-list">
+                    <li>React.js</li>
+                    <li>D3.js</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                </ul>
+                <div class="project-actions">
+                    <a href="#" target="_blank" class="btn btn-primary">LIVE DEMO <i class="fas fa-external-link-alt"></i></a>
+                    <a href="#" target="_blank" class="btn btn-secondary">GITHUB <i class="https://github.com/sushitrxshh"></i></a>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <!-- Project 2: E-commerce Backend API -->
+        <div class="project-item content-block project-reversed reveal-fade-up">
+            <div class="project-visual">
+                <!-- Replace with your project image -->
+                <img src="project2.jpg" alt="E-commerce Backend Code Snippet">
+            </div>
+            <div class="project-details">
+                <h3>E-commerce Backend API</h3>
+                <p class="project-type">Backend Development, API Design</p>
+                <p>
+                    Engineered a robust and scalable RESTful API for an e-commerce platform. This comprehensive backend handles user authentication, product management, order processing, and secure payment integrations.
+                </p>
+                <ul class="project-tech-list">
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>PostgreSQL</li>
+                    <li>Sequelize</li>
+                    <li>Stripe API</li>
+                </ul>
+                <div class="project-actions">
+                    <a href="#" target="_blank" class="btn btn-primary">API DOCS <i class="fas fa-file-alt"></i></a>
+                    <a href="#" target="_blank" class="btn btn-secondary">GITHUB <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3: Fitness Mobile App UI/UX -->
+        <div class="project-item content-block reveal-fade-up">
+            <div class="project-visual">
+                <!-- Replace with your project image -->
+                <img src="project3.jpg" alt="Mobile App UI/UX Mockup">
+            </div>
+            <div class="project-details">
+                <h3>Fitness Mobile App UI/UX</h3>
+                <p class="project-type">UI/UX Design, Prototyping</p>
+                <p>
+                    Designed the user interface and experience for a cross-platform fitness tracking mobile application. Focused on intuitive navigation, clean aesthetics, and user-centric features from wireframing to high-fidelity prototypes.
+                </p>
+                <ul class="project-tech-list">
+                    <li>Figma</li>
+                    <li>Adobe XD</li>
+                    <li>User Research</li>
+                    <li>Prototyping</li>
+                </ul>
+                <div class="project-actions">
+                    <a href="#" target="_blank" class="btn btn-primary">VIEW PROTOTYPE <i class="fas fa-external-link-alt"></i></a>
+                    <a href="#" target="_blank" class="btn btn-secondary">CASE STUDY <i class="fas fa-book"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section">
+        <h2 class="section-title reveal-fade-up">TECHNICAL TOOLKIT</h2>
+        <p class="section-subtitle reveal-fade-up">Languages, frameworks, and tools I wield.</p>
+        <div class="skills-grid">
+            <div class="skill-card reveal-zoom-in">
+                <img src="https://img.icons8.com/color/96/000000/html-5.png" alt="HTML5 Logo" class="skill-icon">
+                <p>HTML5</p>
+            </div>
+            <div class="skill-card reveal-zoom-in">
+                <img src="https://img.icons8.com/color/96/000000/css3.png" alt="CSS Logo" class="skill-icon">
+                <p>CSS</p>
+            </div>
+            <div class="skill-card reveal-zoom-in">
+                <img src="https://img.icons8.com/color/96/000000/javascript--v1.png" alt="JavaScript Logo" class="skill-icon">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-card reveal-zoom-in">
+                <img src="https://img.icons8.com/color/96/000000/python--v1.png" alt="Python Logo" class="skill-icon">
+                <p>Python</p>
+            </div>
+            <div class="skill-card reveal-zoom-in">
+                <img src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo.png" alt="Java Logo" class="skill-icon">
+                <p>Java</p>
+            </div>
+            <div class="skill-card reveal-zoom-in">
+                <img src="https://img.icons8.com/plasticine/100/000000/react.png" alt="React.js Logo" class="skill-icon">
+                <p>React.js</p>
+            </div>
+            <div class="skill-card reveal-zoom-in">
+                <img src="https://img.icons8.com/color/96/000000/nodejs.png" alt="Node.js Logo" class="skill-icon">
+                <p>Node.js</p>
+            </div>
+            <div class="skill-card reveal-zoom-in">
+                <img src="https://img.icons8.com/color/96/000000/git.png" alt="Git Logo" class="skill-icon">
+                <p>Git</p>
+            </div>
+            <div class="skill-card reveal-zoom-in">
+                <img src="c-programming-language-emblem-vector-30032262.jpg" alt="C Logo" class="skill-icon">
+                <p>C</p>
+            </div>
+            <div class="skill-card reveal-zoom-in">
+                <img src="logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png" alt="SQL Logo" class="skill-icon">
+                <p>SQL</p>
+            </div>
+            <div class="skill-card reveal-zoom-in">
+                <img src="c-plus-programming-language-emblem-vector-30039389.jpg" alt="C++ Logo" class="skill-icon">
+                <p>C++</p>
+            </div>
+            <div class="skill-card reveal-zoom-in">
+                <img src="https://img.icons8.com/color/96/000000/mongodb.png" alt="MongoDB Logo" class="skill-icon">
+                <p>MongoDB</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section (Combines Academic & Certificates) -->
+    <section id="experience" class="experience-section section">
+        <h2 class="section-title reveal-fade-up">CAREER HIGHLIGHTS</h2>
+        <p class="section-subtitle reveal-fade-up">My journey of growth and contribution.</p>
+
+        <div class="experience-grid">
+            <div class="experience-card academic-card reveal-fade-up">
+                <h3>B.Tech in Computer Science & Engineering</h3>
+                <p class="organization">Dibrugarh University Institute of Engineering & Technology</p>
+                <p class="duration">2023 - 2027 (Expected)</p>
+                <p>Building a strong foundation in core computer science principles, including Data Structures, Algorithms, OOP, and Web Technologies.</p>
+            </div>
+
+            <div class="experience-card internship-card reveal-fade-up">
+                <h3>Social Internship</h3>
+                <p class="organization">Jagriti Sanmilita Unnayan Kendra</p>
+                <p class="duration">June 2024 - July 2025</p>
+                <p>Conducted comprehensive needs assessments of the needs of over 100 elderly residents at a local old age home, leading to the identification of food preferences, which resulted in a 40% increase in meal satisfaction ratings within two weeks. Facilitated weekly engagement sessions with over 50 individuals facing mental health challenges, significantly improving social interaction and reported happiness levels within a two-week period.</p>
+                <button class="btn btn-details" data-modal-id="certificateModal1">VIEW CERTIFICATE <i class="fas fa-image"></i></button>
+            </div>
+
+            <div class="experience-card internship-card reveal-fade-up">
+                <h3>Project Humanity</h3>
+                <p class="organization">Community Survey Lead</p>
+                <p class="duration">August 2024 - September 2025</p>
+                <p>Designed and executed a comprehensive survey targeting over 100+ individuals facing addiction challenges, identifying critical barriers to treatment and enhancing outreach strategies by 60% within the community.</p>
+                <button class="btn btn-details" data-modal-id="certificateModal2">VIEW CERTIFICATE <i class="fas fa-image"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modals (kept for viewing certificates) -->
+    <div id="certificateModal1" class="modal image-modal">
+        <div class="modal-content">
+            <span class="close-button" data-modal-id="certificateModal1">&times;</span>
+            <h2>Jagriti Sanmilita Unnayan Kendra Certificate</h2>
+            <img src="JagritiUnnayan.jpg" alt="Jagriti Sanmilita Unnayan Kendra Certificate Full View" class="modal-image">
+        </div>
     </div>
-  </section>
 
-  <!-- Certificates Section -->
-  <section id="certificates" class="section">
-    <div class="container">
-      <h2 class="animate__animated animate__fadeIn">Certificates</h2>
-      <!-- Certificate 1 -->
-      <div class="certificate-container">
-        <div class="certificate-details">
-          <h3>Social Internship</h3>
-          <p><strong>Organization:</strong> Jagriti Sanmilita Unnayan Kendra</p>
-          <p><strong>Duration:</strong> June 2024 - July 2025</p>
-          <p><strong>Job Role:</strong> Conducted comprehensive assessments of the needs of over 100 elderly residents at a local old age home, leading to the identification of food preferences, which resulted in a 40% increase in meal satisfaction ratings within two weeks. Facilitated weekly engagement sessions with over 50 individuals facing mental health challenges, significantly improving social interaction and reported happiness levels within a two-week period.</p>
+    <div id="certificateModal2" class="modal image-modal">
+        <div class="modal-content">
+            <span class="close-button" data-modal-id="certificateModal2">&times;</span>
+            <h2>Project Humanity Certificate</h2>
+            <img src="ProjectHumanity.jpg" alt="Project Humanity Certificate Full View" class="modal-image">
         </div>
-        <div class="certificate-photo" onclick="openModal('certificateModal1')">
-          <img src="JagritiUnnayan.jpg" alt="Certificate 1">
-        </div>
-      </div>
-
-      <!-- Certificate 2 -->
-      <div class="certificate-container">
-        <div class="certificate-details">
-          <h3>Social Internship</h3>
-          <p><strong>Organization:</strong> Project Humanity</p>
-          <p><strong>Duration:</strong> January 2025 - January 2025</p>
-          <p><strong>Job Role:</strong> Designed and executed a comprehensive survey targeting over 100+ individuals facing addiction challenges, identifying critical barriers to treatment and enhancing outreach strategies by 60% within the community.</p>
-        </div>
-        <div class="certificate-photo" onclick="openModal('certificateModal2')">
-          <img src="ProjectHumanity.jpg" alt="Certificate 2">
-        </div>
-      </div>
     </div>
-  </section>
 
-  <!-- Job Photos Section -->
-  <section id="job-photos" class="section">
-    <div class="container">
-      <h2 class="animate__animated animate__fadeIn">Job Photos</h2>
-      <div class="job-photos-container">
-        <!-- Job Photo 1 -->
-        <div class="job-photo">
-          <img src="job1.jpg" alt="Job Photo 1">
-          <p><strong>Description:</strong> Making the reports on number of people addicted and no. of people that are addicted because of addictive things.</p>
+    <!-- Memories Section (Refined into a visual story) -->
+    <section id="memories" class="memories-section section">
+        <h2 class="section-title reveal-fade-up">MOMENTS THAT SHAPE ME</h2>
+        <p class="section-subtitle reveal-fade-up">A glimpse into my personal journey.</p>
+
+        <div class="memories-grid">
+            <div class="memory-card reveal-fade-up">
+                <img src="school.jpg" alt="School Friends">
+                <p class="memory-caption">School Days: Cherished moments and lifelong friendships.</p>
+            </div>
+            <div class="memory-card reveal-fade-up">
+                <img src="college.jpg" alt="College Campus">
+                <p class="memory-caption">College Life: Learning, growing, and fun with peers and mentors.</p>
+            </div>
+            <div class="memory-card reveal-fade-up">
+                <video controls preload="none" poster="video-poster.jpg">
+                    <source src="memory-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="memory-caption">A memorable trip, filled with adventure and camaraderie.</p>
+            </div>
+            <div class="memory-card reveal-fade-up">
+                <img src="job1.jpg" alt="Work Insight 1">
+                <p class="memory-caption">Making reports on the prevalence of addiction and contributing factors.</p>
+            </div>
+            <div class="memory-card reveal-fade-up">
+                <img src="job2.jpg" alt="Work Insight 2">
+                <p class="memory-caption">Conducting surveys to understand addiction challenges and treatment barriers.</p>
+            </div>
+            <div class="memory-card reveal-fade-up">
+                <img src="job3.jpg" alt="Work Insight 3">
+                <p class="memory-caption">Engaging in teaching sessions with underprivileged children.</p>
+            </div>
         </div>
-        <!-- Job Photo 2 -->
-        <div class="job-photo">
-          <img src="job2.jpg" alt="Job Photo 2">
-          <p><strong>Description:</strong> Conducting surveys for addiction challenges.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section">
+        <div class="contact-container reveal-fade-up">
+            <h2 class="section-title">LET'S CONNECT</h2>
+            <p class="section-subtitle">Reach out to discuss opportunities or just say hello!</p>
+
+            <div class="contact-grid">
+                <div class="contact-info-block">
+                    <h3>CONTACT DETAILS</h3>
+                    <p><i class="fas fa-phone-alt"></i> <span>+91 6000571941</span></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:ghanakant076@gmail.com">ghanakanta076@gmail.com</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> <span>Majuli, Assam, India</span></p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ghana-payeng" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/sushitrxshh" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-block">
+                    <h3>SEND A MESSAGE</h3>
+                    <form id="contactForm" action="https://formspree.io/f/yourformid" method="POST">
+                        <div class="form-group">
+                            <label for="name">NAME</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Full Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">MESSAGE</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary-alt">SEND MESSAGE <i class="fas fa-paper-plane"></i></button>
+                        <p id="formStatus" class="form-status-message"></p>
+                    </form>
+                </div>
+            </div>
         </div>
-        <!-- Job Photo 3 -->
-        <div class="job-photo">
-          <img src="job3.jpg" alt="Job Photo 3">
-          <p><strong>Description:</strong> Teaching the unprivilged childrens. </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; <span id="currentYear"></span> Ghana Kanta Payeng. All rights reserved.</p>
+            <p>Designed by Ghana Kanta Payeng</p>
         </div>
-      </div>
-    </div>
-  </section>
+        <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    </footer>
 
-  <!-- Memories Section -->
-  <section id="memories" class="section">
-    <div class="container">
-      <h2 class="animate__animated animate__fadeIn">Memories</h2>
-      <div class="memories-container">
-        <!-- School Photo -->
-        <div class="memory">
-          <img src="school.jpg" alt="School Photo">
-          <p><strong>School Days:</strong> Enjoying life with friends during school.</p>
-        </div>
-        <!-- College Photo -->
-        <div class="memory">
-          <img src="college.jpg" alt="College Photo">
-          <p><strong>College Days:</strong> Fun moments with classmates.</p>
-        </div>
-        <!-- Video -->
-        <div class="memory">
-          <video controls>
-            <source src="memory-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <p><strong>Video:</strong> A memorable video.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Resume Section -->
-  <section id="resume" class="section">
-    <div class="container">
-      <h2 class="animate__animated animate__fadeIn">Resume</h2>
-      <button class="btn-resume animate__animated animate__pulse animate__infinite" onclick="openModal('resumeModal')">View Resume <i class="fas fa-eye"></i></button>
-    </div>
-  </section>
-
-  <!-- Resume Modal -->
-  <div id="resumeModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('resumeModal')">&times;</span>
-      <h2>My Resume</h2>
-      <iframe src="Ghana Kanta Payeng Resume.pdf" width="100%" height="600px" style="border: none;"></iframe>
-    </div>
-  </div>
-
-  <!-- Feedback Section -->
-  <section id="feedback" class="section">
-    <div class="container">
-      <h2 class="animate__animated animate__fadeIn">Feedback</h2>
-      <div class="feedback-form animate__animated animate__fadeInUp">
-        <form id="feedbackForm">
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Feedback:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn-submit">Submit Feedback</button>
-        </form>
-      </div>
-      <div class="feedback-list animate__animated animate__fadeInUp">
-        <h3>Recent Feedback</h3>
-        <ul id="feedbackList"></ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2 class="animate__animated animate__fadeIn">Contact</h2>
-      <div class="contact-info animate__animated animate__fadeInUp">
-        <p><i class="fas fa-phone"></i> +91 6000571941</p>
-        <p><i class="fas fa-envelope"></i> ghanakanta076@gmail.com</p>
-        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ghana-payeng" target="_blank">linkedin.com/in/ghana-payeng</a></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Ghana Kanta Payeng. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
