@@ -654,6 +654,9 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: transform var(--transition-speed-medium), box-shadow var(--transition-speed-medium);
     overflow: hidden; /* For images/videos inside */
+    display: flex; /* ADDED: Make it a flex container */
+    flex-direction: column; /* ADDED: Stack content vertically */
+    align-items: center; /* ADDED: Center content horizontally */
 }
 
 .memory-card:hover {
@@ -663,10 +666,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .memory-card img, .memory-card video {
     border-radius: var(--border-radius-soft);
+    width: 100%; /* Ensure it takes full width of its container */
     height: 220px; /* Slightly taller for visuals */
     object-fit: cover;
     margin-bottom: 15px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-left: auto; /* ADDED: Ensure horizontal centering */
+    margin-right: auto; /* ADDED: Ensure horizontal centering */
 }
 
 .memory-caption {
